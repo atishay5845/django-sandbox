@@ -12,9 +12,21 @@ python -m venv .venv
 
 python -m pip install django
 
-django-admin startproject config .
 
+django-admin startproject projectName // create project
+django-admin startproject config . //optional
+
+cd projectName
 python manage.py runserver
+
+
+
+project1/
+├── .venv/
+└── sandbox/
+    ├── sandbox/
+    ├── manage.py
+
 
 project1/
 ├── .venv/
@@ -24,3 +36,6 @@ project1/
     ├── urls.py
     ├── asgi.py
     └── wsgi.py
+
+
+deactivate
