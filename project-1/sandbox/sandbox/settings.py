@@ -54,7 +54,7 @@ ROOT_URLCONF = 'sandbox.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],  # Specify the directory for your templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
