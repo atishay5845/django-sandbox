@@ -63,4 +63,27 @@ so we build html pages in templates folder
 
 # go in setting.py and add 'DIRS': ['templates'] in TEMPLATES
 
-deactivate
+# special syntax(template engine) to inject your code anywhere you want in html file
+
+- example <link rel="stylesheet" href="{% static 'index.css' %}">
+- you also need to load static first inside html files(templates) by {% load static %} at top
+- in setting.py import os library(base direct to tell path path resolver)
+
+# jinja version 2 - used in djongo as templating engine no further extension is needed
+
+user friendly , write normal html file and can inject python in it
+
+<!-- separate apps are made to handle diff module -->
+
+python manage.py startapp sand // make app inside root folder
+
+- django only makes these app but not install them
+  step 1: to make aware main project about app creation
+  add app in installed app
+
+  = every app is a standalone app
+  we can have separate templates folder inside app
+  ex make app/templates/app folder
+  /templates/app/sdls.html add emit for this html file
+
+deactivate - cmd to come out of env
