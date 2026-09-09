@@ -86,4 +86,9 @@ python manage.py startapp sand // make app inside root folder
   ex make app/templates/app folder
   /templates/app/sdls.html add emit for this html file
 
+  make same urls.py file inside app with same content as of project
+  in project urls.py import include with path and
+
+# attach this path- path('sand/', include('sand.urls')), //transfer control to app
+
 deactivate - cmd to come out of env
